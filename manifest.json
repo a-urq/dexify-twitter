@@ -11,8 +11,9 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.twitter.com/*"],
-      "js": ["deXify.js"]
+      "js": ["deXify.js"],
+      "matches": ["*://twitter.com/*"],
+      "run_at": "document_end"
     }
   ]
 }
