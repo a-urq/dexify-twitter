@@ -1,8 +1,9 @@
 setTimeout(function () {
   console.log("starting deXify script");
 
-  // remove active class from all elements
+  // changes logo on browser tab
   document.querySelectorAll('[rel="shortcut icon"]').forEach(function (el) {
+    // may be affected by link rot in the future. in case of that, the file has been saved in the icons folder.
     el.href = "//abs.twimg.com/favicons/twitter.2.ico";
   });
 
